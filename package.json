@@ -1,5 +1,5 @@
 {
-  "name": "lama-dev-next-dashboard",
+  "name": "symoom-academic-care",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-big-calendar": "^1.16.1",
     "next": "^15.1.6",
     "re-chart": "^1.0.0",
     "react": "^18",
+    "react-big-calendar": "^1.17.1",
     "react-calendar": "^5.1.0",
     "react-dom": "^18",
     "recharts": "^2.15.1"

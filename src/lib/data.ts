@@ -248,7 +248,7 @@ export const studentsData = [
   },
 ];
 
-export const parentsData = [
+export const guardiansData = [
   {
     id: 1,
     name: "John Doe",
@@ -421,7 +421,7 @@ export const classesData = [
     supervisor: "Iva Frank",
   },
   {
-    id: 5,
+    id: 6,
     name: "5B",
     capacity: 20,
     grade: 5,
@@ -914,7 +914,6 @@ export const announcementsData = [
     date: "2025-01-01",
   },
 ];
-
 
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 export const calendarEvents = [
