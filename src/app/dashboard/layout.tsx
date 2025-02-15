@@ -15,30 +15,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <div className="h-screen flex">
-        {/* left side */}
-        <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
-          {/* Logo part */}
-          <Link
-            href="/"
-            className="flex items-center justify-center lg:justify-start gap-2"
-          >
-            <Image src="/logo.png" alt="logo" width={32} height={32} />
-            <span className="px-2 hidden lg:block font-bold">Symoom</span>
-          </Link>
-          <Menu />
-        </div>
-        {/* right side */}
-        <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll flex flex-col">
-          <Navbar />
-          {children}
-        </div>
+    <div className={`${inter.className} h-screen flex bg-[#F7F8FA]`}>
+      {/* left side */}
+      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4 bg-white">
+        <Link
+          href="/"
+          className="flex items-center justify-center lg:justify-start gap-2"
+        >
+          <Image src="/logo.png" alt="logo" width={32} height={32} />
+          <span className="px-2 hidden lg:block font-bold">Symoom</span>
+        </Link>
+        <Menu />
       </div>
-    </html>
+      {/* right side */}
+      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] overflow-scroll flex flex-col">
+        <Navbar />
+        {children}
+      </div>
+    </div>
   );
 }
